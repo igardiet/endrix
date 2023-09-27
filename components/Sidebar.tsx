@@ -32,10 +32,26 @@ const Sidebar: React.FC<SidebarProps> =
                     active: pathname === '/search',
                     href: '/search'
                 }
-            ], [ pathname ] )       
+            ], [ pathname ] )
 
         return (
-            
+            <div className="flex h-full">
+                <div className="
+                hidden
+                md:flex
+                flex-col
+                gap-y-2
+                bg-black
+                h-full
+                w-[300px]
+                p-2
+                ">
+                    <Box>
+                        Sidebar nav
+                    </Box>
+                </div>
+            </div>
+
         )
     }
 
