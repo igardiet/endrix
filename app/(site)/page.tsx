@@ -1,7 +1,6 @@
-
 export default function Home ()
 {
   return (
-    <h1>Endrix</h1>
+    <h1 className="text-green-500">Endrix</h1>
   )
 }
