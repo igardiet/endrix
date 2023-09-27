@@ -18,7 +18,21 @@ const Sidebar: React.FC<SidebarProps> =
     } ) =>
     {
         const pathname = usePathname();
-       
+        const routes = useMemo( () =>
+            [
+                {
+                    icon: HiHome,
+                    label: 'Home',
+                    active: pathname !== '/search',
+                    href: '/'
+                },
+                {
+                    icon: BiSearch,
+                    label: 'Search',
+                    active: pathname === '/search',
+                    href: '/search'
+                }
+            ], [ pathname ] )       
 
         return (
             
