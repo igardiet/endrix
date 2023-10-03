@@ -11,3 +11,12 @@ export interface UserDetalis
     payment_method?: Stripe.PaymentMethod[ Stripe.PaymentMethod.Type ]
 }
 
+export interface Product
+{
+    id: string;
+    active?: boolean;
+    name?: string;
+    description?: string;
+    image?: string;
+    metadata?: Stripe.Metadata;
+}
